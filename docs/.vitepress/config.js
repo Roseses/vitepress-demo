@@ -7,7 +7,7 @@ module.exports = {
     head: [['link', { rel: 'icon', type: 'image/svg+xml', href: 'vitepress-logo-mini.svg' }]],
     themeConfig: {
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/gumingWu/vitepress-fun' }
+          { icon: 'github', link: 'https://github.com/Roseses/vitepress-demo.git' }
         ],
         footer: {
             message: '其实我也不知道写啥注脚',
