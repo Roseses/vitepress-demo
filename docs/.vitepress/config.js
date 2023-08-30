@@ -12,6 +12,28 @@ module.exports = {
         footer: {
             message: '其实我也不知道写啥注脚',
             copyright: '那我就随便写个吧',
-          }
-      }
+        },
+        sidebar: [
+            {
+              text: "基础",
+              items: [
+                { text: "快速开始", link: "/guide/" },
+                { text: "使用方式", link: "/guide/use" }
+                ]
+            },
+            {
+                text: "组件",
+                items: [
+                  { text: "快速开始", link: "/components/" },
+                  { text: "使用方式", link: "/components/use" }
+                  ]
+              },
+        ],
+    },
+    // markdown: {
+    //   theme: {
+    //     light: "vitesse-light",
+    //     dark: "vitesse-dark",
+    //   },
+    // },
 }
