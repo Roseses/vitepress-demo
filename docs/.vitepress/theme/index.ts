@@ -5,7 +5,7 @@ import AnimateTitle from "./components/AnimateTitle.vue";
 import { Props } from './common/data';
 
 const IndexConfig: Props = {
-  firstTitle: undefined,
+  firstTitle: 'roses-ui',
   secondTitle: undefined,
   thirdTitle: undefined
 }
