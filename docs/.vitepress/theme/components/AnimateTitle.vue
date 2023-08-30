@@ -1,11 +1,22 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+export interface Props {
+    firstTitle?: string
+    secondTitle?: string
+    thirdTitle?: string
+  }
+const props = withDefaults(defineProps<Props>(), {
+  firstTitle: 'Vitepress Fun Cli',
+  secondTitle: 'A Vitepress Site For Fun',
+  thirdTitle: 'My great project tagline'
+})
+</script>
 
 <template>
   <h1 class="name">
-    <span class="clip">Vitepress Fun Cli</span>
+    <span class="clip">{{ props.firstTitle }}</span>
   </h1>
-  <p class="text">A Vitepress Site For Fun</p>
-  <p class="tagline">My great project tagline</p>
+  <p class="text">{{ props.secondTitle }}</p>
+  <p class="tagline">{{ props.thirdTitle }}</p>
 </template>
 
 <style scoped>
